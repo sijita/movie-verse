@@ -33,9 +33,10 @@ Proyecto resultado de la realización del test para BeMaster donde aplico al pue
 ```
 
 
-## Variables de entorno y 
+## Variables de entorno
 
 Las variables de entorno las subí junto con el repositorio para facilidad de uso.
+
 ## Tecnologías usadas en el proyecto 💻 
 
 * **Next.js v14.1.3:**  Uso de componentes del lado del cliente y del servidor
