@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# BeMaster Test
 
-First, run the development server:
+Proyecto resultado de la realización del test para BeMaster donde aplico al puesto FrontEnd Developer el cual está inspirado en la app de Disney+.
 
+### 🚀 Despliegue:  [BeMaster Movies](https://bemaster-test.vercel.app/)
+
+
+
+## Instrucciones de instalación 🛠️
+
+### 1 - Clonar proyecto
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/sijita/bemaster-test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2 - Ubicarse en el directorio principal
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd bemaster-test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3 - Instalar dependencias
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4 - Iniciar el servidor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Variables de entorno y 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Las variables de entorno las subí junto con el repositorio para facilidad de uso.
+## Tecnologías usadas en el proyecto 💻 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* **Next.js v14.1.3:**  Uso de componentes del lado del cliente y del servidor
+
+* **Tailwindcss**
+
+* **NextUI:** Componentes hechos con Tailwindcss y React
+
+* **Axios**
+
+* **Valibot:** Validación de datos
+
+* **Next-auth:** Autenticación de usuarios
+
+* **Tabler icons:** Iconos
+
+* **React Hot Toast:** Notificaciones
+
+* **TMDB API:** API utilizada para traer los datos e información de las peliculas y series. [The Movie Database](https://www.themoviedb.org/?language=es)
+## Justificaciones
+
+#### Justificaciones con respecto a las tecnologías sugeridas para la realización del reto:
+
+**React JS:**
+
+Utilicé Nextjs en su ultima version ya que ofrece un rendimiento superior a React (vite o create-react-app) gracias a la renderización del lado del servidor (SSR) y la generación de sitios web estáticos.
+
+El uso de Next.js permite crear componentes del lado del servidor que se ejecutan en el servidor y se envían al cliente como HTML estático. Esto da más control a la experiencia del usuario y permite optimizar el rendimiento del sitio web. Además incluye los server actions, enrutamiento automático, la creación de APIs y una serie de características de optimización automática, como la división de código y la carga diferida de imágenes.
+
+Gracias a Nextjs pude incluir al proyecto las siguientes caracteristicas demostrando un poco más de mis conocimientos como:
+- Realizar la API para el login de usuarios con dummy data ya que no se requirio manejo de base de datos.
+- Uso de componentes del lado del servidor y también los componentes del lado del cliente
+- Uso de los servers actions
+- Evitar el uso de manejo de estados
+
+
+**Context API o Redux:**
+
+No fue necesario el uso de Context API o Redux ya que no necesité guardar estados y utilicé componentes en el servidor (que no permiten esto). Para algunas acciones en especifico como filtrar las peliculas y series por día o semana utilicé los server actions de Nextjs.
+
+**Axios (en caso de requerirlo)** ✅
+
+Utilicé Axios para hacer solicitudes HTTP a la API de [The Movie Database](https://www.themoviedb.org/?language=es) y crear una instancia global que me permitiera en cada solicitud enviar el API_KEY proporcionado por la API.
+
+**Plus: Typescript** ✅
