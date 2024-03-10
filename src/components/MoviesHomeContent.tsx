@@ -24,8 +24,8 @@ export default function MoviesHomeContent({
   }[];
 }) {
   return (
-    <main className="flex flex-col gap-20">
-      <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-20">
+      <div className="flex flex-col gap-10">
         <Link href="/movies" className="text-4xl font-bold">
           Películas
         </Link>
@@ -39,8 +39,8 @@ export default function MoviesHomeContent({
           </p>
         </div>
         <MoviesCategories categories={moviesCategories} />
-      </section>
-      <section className="flex flex-col gap-5">
+      </div>
+      <div className="flex flex-col gap-5">
         <div className="flex flex-col w-full gap-5">
           <div className="flex flex-wrap justify-between gap-5">
             <div className="flex items-center gap-3">
@@ -54,7 +54,7 @@ export default function MoviesHomeContent({
           </p>
         </div>
         <MoviesRow movies={trendingMovies} />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }

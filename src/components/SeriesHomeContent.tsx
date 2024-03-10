@@ -22,9 +22,9 @@ export default function SeriesHomeContent({
   }[];
 }) {
   return (
-    <main className="flex flex-col gap-20">
-      <section className="flex flex-col gap-10">
-        <section className="flex flex-col gap-10">
+    <section className="flex flex-col gap-20">
+      <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10">
           <Link href="/series" className="text-4xl font-bold">
             Series
           </Link>
@@ -38,8 +38,8 @@ export default function SeriesHomeContent({
             </p>
           </div>
           <SeriesCategories categories={seriesCategories} />
-        </section>
-        <section className="flex flex-col w-full gap-5">
+        </div>
+        <div className="flex flex-col w-full gap-5">
           <div className="flex flex-wrap justify-between gap-5">
             <div className="flex items-center gap-3">
               <IconFlame className="text-primary fill-primary" size={25} />
@@ -50,9 +50,9 @@ export default function SeriesHomeContent({
           <p className="text-lg">
             Descubre las series en tendencia de la semana o del día.
           </p>
-        </section>
+        </div>
         <SeriesRow series={trendingSeries} />
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
