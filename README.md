@@ -85,3 +85,5 @@ No fue necesario el uso de Context API o Redux ya que no necesité guardar estad
 Utilicé Axios para hacer solicitudes HTTP a la API de [The Movie Database](https://www.themoviedb.org/?language=es) y crear una instancia global que me permitiera en cada solicitud enviar el API_KEY proporcionado por la API.
 
 **Plus: Typescript** ✅
+
+Además realicé la prueba incluyendo el manejo de una API externa y no el uso de datos estaticos en archivos json estaticos como me lo sugerían.
