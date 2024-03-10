@@ -33,9 +33,12 @@ Proyecto resultado de la realización del test para BeMaster donde aplico al pue
 ```
 
 
-## Variables de entorno
+## Variables de entorno e información de usuario para iniciar sesión
 
 Las variables de entorno las subí junto con el repositorio para facilidad de uso.
+
+- **Correo electrónico:** admin@mail.com
+- **Contraseña:** admin
 
 ## Tecnologías usadas en el proyecto 💻 
 
