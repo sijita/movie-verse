@@ -8,7 +8,14 @@ export function Providers({ children }: { children: React.ReactNode }) {
 
   return (
     <NextUIProvider navigate={router.push}>
-      <Toaster />
+      <Toaster
+        toastOptions={{
+          style: {
+            background: "#151515",
+            color: "#fff",
+          },
+        }}
+      />
       {children}
     </NextUIProvider>
   );
