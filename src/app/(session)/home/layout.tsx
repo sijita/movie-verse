@@ -1,7 +1,7 @@
 import Hero from "@/components/ui/Hero";
 import Loading from "@/components/ui/Loading";
 import { Suspense } from "react";
-import { fetchRandomMovie } from "@/actions/movies";
+import { fetchRandomMovie } from "@/api/movies";
 
 export default async function layout({
   children,

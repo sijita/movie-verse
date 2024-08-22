@@ -1,5 +1,5 @@
+import { fetchSeriesByCategory } from "@/api/series";
 import ContentCategory from "@/components/ContentCategory";
-import { fetchSeriesByCategory } from "@/actions/series";
 
 export default async function Page({
   params: { id },

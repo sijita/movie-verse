@@ -1,5 +1,5 @@
 import MoviesCategories from "@/components/MoviesCategories";
-import { fetchMoviesCategories } from "@/actions/movies";
+import { fetchMoviesCategories } from "@/api/movies";
 import { IconCategoryFilled } from "@tabler/icons-react";
 
 export default async function Layout({

@@ -1,4 +1,4 @@
-import { fetchSerieDetails } from "@/actions/series";
+import { fetchSerieDetails } from "@/api/series";
 import SerieContentDetails from "@/components/SerieContentDetails";
 
 export default async function Page({

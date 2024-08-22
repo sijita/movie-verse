@@ -4,15 +4,15 @@ import TrendingMoviesFilter from "@/components/TrendingMoviesFilter";
 import {
   fetchMoviesCategories,
   fetchTopRatedMovies,
-  fetchTrendingMovies,
   fetchUpcomingMovies,
-} from "@/actions/movies";
+} from "@/api/movies";
 import {
   IconCategoryFilled,
   IconFlame,
   IconThumbUpFilled,
   IconTicket,
 } from "@tabler/icons-react";
+import { fetchTrendingMovies } from "@/actions/movies";
 
 export default async function Page() {
   const categories = await fetchMoviesCategories();

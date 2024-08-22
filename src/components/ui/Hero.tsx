@@ -25,7 +25,7 @@ export default function Hero({
       />
       <div className="flex flex-col items-center justify-center gap-5 z-10">
         <h1 className="lg:text-5xl text-4xl text-center text-inherit font-bold drop-shadow-lg">
-          Welcome to BeMaster Movies
+          Welcome to Movie-Verse
         </h1>
         <p className="text-xl font-medium drop-shadow-lg text-center">
           Discover the latest movies and TV shows.

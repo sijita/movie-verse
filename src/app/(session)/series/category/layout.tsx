@@ -1,4 +1,4 @@
-import { fetchSeriesCategories } from "@/actions/series";
+import { fetchSeriesCategories } from "@/api/series";
 import SeriesCategories from "@/components/SeriesCategories";
 import { IconCategoryFilled } from "@tabler/icons-react";
 

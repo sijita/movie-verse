@@ -6,8 +6,8 @@ import { Providers } from "./providers";
 const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Movies Info App - BeMaster Test",
-  description: "Movies Info App - BeMaster Test",
+  title: "Movies Info App - Movie-Verse",
+  description: "Movies Info App - Movie-Verse",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
 
-export default function NavBar() {
+export default function NavBar({ session }: { session: any }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -79,7 +79,7 @@ export default function NavBar() {
         <NavbarBrand className="flex gap-3">
           <IconMovie className="text-primary" />
           <Link className="text-inherit" href="/">
-            <p className="font-bold text-inherit text-2xl">BeMaster Movies</p>
+            <p className="font-bold text-inherit text-2xl">Movie-Verse</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
@@ -112,14 +112,26 @@ export default function NavBar() {
           </Button>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            color="primary"
-            className="text-black"
-            radius="full"
-            onClick={() => signOut()}
-          >
-            Cerrar sesión
-          </Button>
+          {session ? (
+            <Button
+              color="primary"
+              className="text-black"
+              radius="full"
+              onClick={() => signOut()}
+            >
+              Cerrar sesión
+            </Button>
+          ) : (
+            <Button
+              color="primary"
+              className="text-black"
+              radius="full"
+              as={Link}
+              href="/login"
+            >
+              Iniciar sesión
+            </Button>
+          )}
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>

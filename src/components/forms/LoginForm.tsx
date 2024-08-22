@@ -19,24 +19,28 @@ export default function LoginForm() {
         type="email"
         name="email"
         label="Correo electrónico"
+        placeholder="example@domain.com"
         autoCapitalize="none"
         autoComplete="email"
         autoCorrect="off"
         endContent={<IconMail className="text-gray-500" />}
         isRequired
         classNames={{
-          input: "text-white font-semibold",
-          inputWrapper: "bg-black",
+          input: "text-black",
+          inputWrapper: "bg-white",
         }}
+        labelPlacement="outside"
       />
       <Input
         type={showPassword ? "text" : "password"}
         name="password"
         label="Contraseña"
+        placeholder="********"
         endContent={
           <Button
-            color="primary"
+            variant="light"
             onClick={() => setShowPassword(!showPassword)}
+            isIconOnly
           >
             {showPassword ? (
               <IconEyeClosed color="black" />
@@ -47,9 +51,10 @@ export default function LoginForm() {
         }
         isRequired
         classNames={{
-          input: "text-white font-semibold",
-          inputWrapper: "bg-black",
+          input: "text-black",
+          inputWrapper: "bg-white",
         }}
+        labelPlacement="outside"
       />
       <Link href="#" className="text-sm text-primary hover:underline">
         ¿Olvidaste tu contraseña?
@@ -58,11 +63,17 @@ export default function LoginForm() {
         color="primary"
         type="submit"
         className="mt-3 font-semibold text-black"
-        size="lg"
+        size="md"
         fullWidth
       >
         Iniciar sesión
       </Button>
+      <div className="text-sm mt-3">
+        ¿No tienes una cuenta?{" "}
+        <Link href="/signup" className="text-sm text-primary hover:underline">
+          Registrate
+        </Link>
+      </div>
     </form>
   );
 }

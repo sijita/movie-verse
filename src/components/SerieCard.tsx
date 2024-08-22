@@ -14,8 +14,11 @@ export default function SerieCard({
   };
 }) {
   return (
-    <Link className="flex w-80" href={`/series/${serie.id}`}>
-      <Card className="w-80 flex flex-col gap-5 p-4 rounded-2xl bg-transparent border border-default">
+    <Link
+      className="flex w-80 hover:scale-95 transition-all"
+      href={`/series/${serie.id}`}
+    >
+      <Card className="w-80 flex flex-col gap-5 p-4 rounded-2xl bg-transparent border border-[#242424]">
         <div className="relative">
           <Image
             src={`https://image.tmdb.org/t/p/original${serie.poster_path}`}

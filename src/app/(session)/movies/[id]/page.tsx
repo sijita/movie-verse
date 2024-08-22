@@ -1,5 +1,5 @@
 import MovieContentDetails from "@/components/MovieContentDetails";
-import { fetchMovieDetails } from "@/actions/movies";
+import { fetchMovieDetails } from "@/api/movies";
 
 export default async function Page({
   params: { id },

@@ -12,14 +12,14 @@ export default async function Layout({
 }) {
   const session = await getServerSession();
 
-  if (!session) {
-    return redirect("/login");
-  }
+  // if (!session) {
+  //   return redirect("/login");
+  // }
 
   return (
     <main className="min-h-screen flex flex-col gap-10">
       <Suspense fallback={<Loading />}>
-        <NavBar />
+        <NavBar session={session} />
         {children}
         <Footer />
       </Suspense>

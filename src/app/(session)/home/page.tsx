@@ -1,8 +1,10 @@
 import { Divider } from "@nextui-org/react";
 import MoviesHomeContent from "@/components/MoviesHomeContent";
 import SeriesHomeContent from "@/components/SeriesHomeContent";
-import { fetchMoviesCategories, fetchTrendingMovies } from "@/actions/movies";
-import { fetchTrendingSeries, fetchSeriesCategories } from "@/actions/series";
+import { fetchMoviesCategories } from "@/api/movies";
+import { fetchTrendingMovies } from "@/actions/movies";
+import { fetchTrendingSeries } from "@/actions/series";
+import { fetchSeriesCategories } from "@/api/series";
 
 export default async function Page() {
   const moviesCategories = await fetchMoviesCategories();
@@ -16,7 +18,7 @@ export default async function Page() {
         moviesCategories={moviesCategories}
         trendingMovies={trendingMovies}
       />
-      <Divider />
+      <Divider className="bg-primary" />
       <SeriesHomeContent
         seriesCategories={seriesCategories}
         trendingSeries={trendingSeries}

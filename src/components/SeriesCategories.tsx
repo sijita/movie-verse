@@ -19,12 +19,12 @@ export default function SeriesCategories({
           className="w-full h-24"
         >
           <Card
-            className="flex flex-col items-center justify-center p-5 h-24"
+            className="flex flex-col items-center justify-center p-5 h-24 hover:scale-90 transition-all"
             classNames={{
               base: `rounded-2xl ${
                 pathname === `/series/category/${category.id}`
                   ? "bg-primary text-black"
-                  : "bg-default border border-default hover:bg-primary hover:text-black"
+                  : "bg-default border border-default hover:bg-primary hover:text-black transition-all"
               }`,
             }}
             fullWidth

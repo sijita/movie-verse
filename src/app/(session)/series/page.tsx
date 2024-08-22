@@ -1,9 +1,8 @@
 import {
   fetchSeriesCategories,
   fetchTopRatedSeries,
-  fetchTrendingSeries,
   fetchUpcomingSeries,
-} from "@/actions/series";
+} from "@/api/series";
 import {
   IconCategoryFilled,
   IconFlame,
@@ -13,6 +12,7 @@ import {
 import TrendingSeriesFilter from "@/components/TrendingSeriesFilter";
 import SeriesRow from "@/components/SeriesRow";
 import SeriesCategories from "@/components/SeriesCategories";
+import { fetchTrendingSeries } from "@/actions/series";
 
 export default async function Page() {
   const categories = await fetchSeriesCategories();
